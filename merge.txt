@@ -1,0 +1,4 @@
+On the develop/fix branch
+After you are satisfied with your change.
+	git pull origin master
+	git push origin develop/fix
