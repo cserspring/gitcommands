@@ -1,0 +1,10 @@
+git pull origin master
+git push origin master
+
+git add --all :/
+git commit -am "Commit Msg"
+
+git checkout -b develop/fix
+git checkout develop/fix
+
+git log --graph
