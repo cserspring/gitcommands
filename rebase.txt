@@ -4,8 +4,8 @@
 Repeat: 
     git add --all :/
     git commit -a -m "message"
-    git push origin develop/fix
- 
+    git push --set-upstream origin develop/fix (First time)
+    git push origin develop/fix 
 
     git rebase -i master
         modify all the picks except the first one to fixup
@@ -14,7 +14,7 @@ Repeat:
     git pull origin master
     git checkout develop/fix
     git rebase master
-    git push origin develop/fix
+    git push --force
     buildreq -b
 
     git checkout master
