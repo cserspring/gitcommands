@@ -26,3 +26,5 @@ git log -p -2
 Before you pull,
 git log --name-status origin/master..
 	Will show you what commits you are about to retrieve, along with the names of the files.
+
+Git commands are too fat, why don't we have simple ones?

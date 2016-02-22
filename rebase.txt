@@ -24,3 +24,6 @@ Repeat:
  
     git push origin --delete develop/fix
     git branch -D develop/fix
+
+
+So complex, do we have any simple way to do it?
