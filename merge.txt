@@ -1,3 +1,5 @@
+Please use rebase before merge.
+
 On the develop/fix branch
 After you are satisfied with your change.
 	git pull origin master

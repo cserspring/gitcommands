@@ -4,7 +4,6 @@
 Repeat: 
     git add --all :/
     git commit -a -m "message"
-    git push --set-upstream origin develop/fix (First time)
     git push origin develop/fix 
 
     git rebase -i master
@@ -14,7 +13,7 @@ Repeat:
     git pull origin master
     git checkout develop/fix
     git rebase master
-    git push --force
+    git push origin develop/fix --force (Use force here)
     buildreq -b
 
     git checkout master
