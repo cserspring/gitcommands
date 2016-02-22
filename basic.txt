@@ -7,12 +7,22 @@ git commit -am "Commit Msg"
 git checkout -b develop/fix
 git checkout develop/fix
 
-git log --graph
-
-git log --pretty="%h - %s" --author=foo --before="2015-11-06" --
-
 git remote -v
 git remote show origin
 
 git rm log/\*.log
 git rm \*~
+
+git log --graph
+
+git log --pretty="%h - %s" --author=foo --before="2015-11-06" --
+
+git log --name-status -2
+	Will show you the names of the files that changed for the last two commits.
+
+git log -p -2
+	Will show you the changes themselves.
+
+Before you pull,
+git log --name-status origin/master..
+	Will show you what commits you are about to retrieve, along with the names of the files.
