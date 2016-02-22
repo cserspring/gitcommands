@@ -1,0 +1,26 @@
+    git pull origin master
+    git checkout -b develop/fix
+
+Repeat: 
+    git add --all :/
+    git commit -a -m "message"
+    git push origin develop/fix
+ 
+
+    git rebase -i master
+        modify all the picks except the first one to fixup
+
+    git checkout master
+    git pull origin master
+    git checkout develop/fix
+    git rebase master
+    git push origin develop/fix
+    buildreq -b
+
+    git checkout master
+    git merge develop/fix
+    git push origin master
+        If you run into trouble when you need to pull because someone has pushed between step 9 and now, you can perform a git pull --rebase to pull the changes from master down and rebase your local changes on top of them.
+ 
+    git push origin --delete develop/fix
+    git branch -D develop/fix
